@@ -47,6 +47,12 @@
 		.navbar-brand, .navbar-nav {
 			background-color: rgba(30,30,50,.9);
 		}
+		.card {
+			background-color: rgb(30,30,50);
+		}
+		.news {
+			font-size: .8em;
+		}
 
 	</style>
 </head>
@@ -55,7 +61,7 @@
 <body>
 	<div class="container col-md-8 rounded" id="pagecontainer">
 	
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark col-8 mx-auto">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark col-md-8 mx-auto">
 			<a class="navbar-brand px-3 rounded" href="./index.html">Ballhorn Lab</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -90,16 +96,32 @@
 			</div>
 		</nav>
 
-		<div class="container" id="content">
+		<div class="container col-12 .clearfix" id="content">
 			<!--########################################################################################
 			Page Content Begins Here
 			######################################################################################## -->
 			
-			<div class="card float-left rounded p-1 mr-3" style="width: 300px; background-color: rgb(30,30,50);">
-				<img src="http://danielballhorn.com/resources/_wsb_500x365_1H4A2905-ed-1+copy+3.jpg" class="img-fluid rounded">
-				<em>Daniel Ballhorn, Ph.D</em></div>
+			<div class="card col-6 p-1 ml-3 mb-3 float-right">
+				<div class="card-header">
+					<h4>Latest News</h4>
+				</div>
+				<div class="card-block news">
+					<ul>
+						<li>Good job, Jess! The paper entitled "Effect of mycorrhizal colonization and light limitation on growth and reproduction of lima bean (Phaseolus lunatus L.)" becomes the most read article from the Journal of Applied Botany and Food Quality (issue 86, 2013) with a total of 1846 full text downloads. - August 2014. </li>
+
+							<li>Congratulations to Brett Younginger! Brett is an invited speaker at this years ISCE meeting in Champaign-Urbana. His abstract titled "Aboveground fungal pathogens reduce belowground microbial mutualists" has been selected for the symposium "Fungal superhighways: common mycorrhizal networks mediating plant communication". As invited speaker, Brett will give a 20 min presentation on his research in the Ballhorn lab. </li>
+
+							<li>Congratulations to PhD student Adrienne Godschalx in the Ballhorn lab! Adrienne was awarded a travel award through the David T. Clark Scholarship for biology graduate students. Way to go, Adrienne! - June 2014. </li>
+					</ul>
+				</div>
+			</div>
+			
 			<p>In the Ballhorn lab, we are interested in interactions between organisms of different trophic levels including plants, herbivores as well as pathogenic and mutualistic microbes (fungi and bacteria). Furthermore, we study the effects of abiotic factors on these complex interactions. In our research, we combine laboratory approaches and field experiments to obtain a deeper functional understanding of these interactions in nature.</p>
 			<p>To <a href="http://www.pdx.edu/biology/tenure-track-faculty-0">PSU staff </a>page.</p>
+			
+			<div class="card mx-auto rounded p-1" style="width: 400px;">
+				<img src="http://danielballhorn.com/resources/_wsb_500x365_1H4A2905-ed-1+copy+3.jpg" class="img-fluid rounded">
+				<em>Daniel Ballhorn, Ph.D</em></div>
 
 
 			<!--########################################################################################
