@@ -42,6 +42,7 @@
 			height: 100%;
 			padding-top: 150px;
 			color: #ccc;
+			height: 90vh;
 		}
 		.navbar-brand, .navbar-nav {
 			background-color: rgba(30,30,50,.9);
@@ -52,41 +53,51 @@
 
 
 <body>
-	<div class="container col-md-7 rounded" id="pagecontainer">
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top col-md-7 mx-auto tp-5 rounded">
+	<div class="container col-md-8 rounded" id="pagecontainer">
+	
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark col-8 mx-auto">
 			<a class="navbar-brand px-3 rounded" href="./index.html">Ballhorn Lab</a>
-			<div class="">
-				<ul class="navbar-nav mr-auto rounded">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto rounded px-2">
 					<li class="nav-item">
-						<a class="nav-link mx-1" href="#">News</a>
+						<a class="nav-link" href="#">News</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link mx-1" href="./research.html">Research</a>
+						<a class="nav-link" href="./research.html">Research</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link mx-1" href="#">People</a>
+						<a class="nav-link" href="#">People</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link mx-1" href="#">Publications</a>
+						<a class="nav-link" href="#">Publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link mx-1" href="#">Teaching</a>
+						<a class="nav-link" href="#">Teaching</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link mx-1" href="#">CV</a>
+						<a class="nav-link" href="#">CV</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link mx-1" href="#">Contact</a>
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Methods</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 
-		<div class="container">
+		<div class="container" id="content">
 			<!--########################################################################################
 			Page Content Begins Here
 			######################################################################################## -->
-			<img class="rounded mx-auto d-block mb-3" src="http://danielballhorn.com/resources/_wsb_500x365_1H4A2905-ed-1+copy+3.jpg">
+			
+			<div class="card float-left rounded p-1 mr-3" style="width: 300px; background-color: rgb(30,30,50);">
+				<img src="http://danielballhorn.com/resources/_wsb_500x365_1H4A2905-ed-1+copy+3.jpg" class="img-fluid rounded">
+				<em>Daniel Ballhorn, Ph.D</em></div>
 			<p>In the Ballhorn lab, we are interested in interactions between organisms of different trophic levels including plants, herbivores as well as pathogenic and mutualistic microbes (fungi and bacteria). Furthermore, we study the effects of abiotic factors on these complex interactions. In our research, we combine laboratory approaches and field experiments to obtain a deeper functional understanding of these interactions in nature.</p>
 			<p>To <a href="http://www.pdx.edu/biology/tenure-track-faculty-0">PSU staff </a>page.</p>
 
